@@ -1,0 +1,16 @@
+<img src="https://s3-media0.fl.yelpcdn.com/bphoto/oEo8MNaNU0Kfd8RHbCDqqA/258s.jpg">
+<script>
+    let img = document.querySelector('img');
+    img.addEventListener('loadstart', function(e) {
+        console.log('>>> onloadstart');
+    });
+    img.addEventListener('loadend', function(e) {
+        console.log('>>> onloadend');
+    });
+    img.addEventListener('load', function(e) {
+        console.log('>>> onload');
+    });
+    img.addEventListener('loadedmetadata', function(e) {
+        console.log('>>> onloadedmetadata');
+    });
+</script>
